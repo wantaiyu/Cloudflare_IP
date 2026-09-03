@@ -20,5 +20,5 @@ jobs:
         run: |
           git remote add upstream https://github.com/xgonce/Cloudflare_IP.git || true
           git fetch upstream
-          git merge upstream/main --no-edit || true
+          git merge upstream/main --no-edit --allow-unrelated-histories || true
           git push origin main
