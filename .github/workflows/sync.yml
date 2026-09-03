@@ -22,5 +22,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote add upstream https://github.com/xgonce/Cloudflare_IP.git || true
           git fetch upstream
-          git merge upstream/main --no-edit --allow-unrelated-histories || true
+          git merge upstream/main --no-edit --allow-unrelated-histories -X theirs || true
           git push origin main
